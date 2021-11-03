@@ -19,9 +19,9 @@ namespace Comp_Graph6
         };
 
         static private float[,] isometric =
-            {  { (float)Math.Sqrt(0.5), 0, (float)-Math.Sqrt(0.5), 0 },
-               { 1 / (float)Math.Sqrt(6), 2 /(float) Math.Sqrt(6), 1 / (float)Math.Sqrt(6), 0 },
-               { 1 / (float)Math.Sqrt(3), -1 / (float)Math.Sqrt(3), 1 / (float)Math.Sqrt(3), 0 },
+            {  { (float)Cos(PI/6), (float)(Sin(PI/6) * Sin(PI/6)), 0, 0 },
+               { 0, (float)Cos(PI/6), 0, 0 },
+               { (float)(Sin(PI/6)), (float)-(Sin(PI/6) * Cos(PI/6)), 0, 0 },
                { 0, 0, 0, 1 }
         };
 
